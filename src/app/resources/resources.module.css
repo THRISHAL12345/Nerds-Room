@@ -1,0 +1,127 @@
+.container {
+    padding: 8rem 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+    text-shadow: 4px 4px 0px var(--color-primary-neon-green);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Vending Machine Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 3rem;
+    background: #222;
+    padding: 3rem;
+    border: 10px solid #444;
+    border-radius: 20px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.grid::before {
+    content: 'THE STASH v1.0';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: var(--color-primary-neon-green);
+    padding: 0.5rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    border: 2px solid #444;
+}
+
+.item {
+    background: #333;
+    padding: 1.5rem;
+    border: 4px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-color: var(--color-primary-neon-green);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.itemName {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.itemDesc {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.priceTag {
+    background: var(--color-primary-neon-green);
+    color: #000;
+    padding: 0.3rem 0.8rem;
+    font-weight: 900;
+    font-size: 0.9rem;
+    transform: rotate(-5deg);
+    margin-bottom: 1rem;
+    border: 2px solid #000;
+}
+
+.grabBtn {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid #555;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.grabBtn:hover {
+    background: var(--color-primary-neon-green);
+    color: #000;
+    border-color: #000;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        padding: 1.5rem;
+        border-width: 5px;
+    }
+}
