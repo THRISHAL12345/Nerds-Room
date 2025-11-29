@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
+import GlitchText from "./GlitchText";
 
 const Hero = () => {
     return (
@@ -29,9 +30,11 @@ const Hero = () => {
                 animate={{ opacity: 1, scale: 1, rotate: -1 }}
                 transition={{ duration: 0.5, type: "spring", bounce: 0.5 }}
             >
-                <h1 className={styles.title}>
-                    Where Builders, Hackers & Creators Meet.
-                </h1>
+                <GlitchText
+                    text="Where Builders, Hackers & Creators Meet."
+                    className={styles.title}
+                    as="h1"
+                />
                 <p className={styles.subtitle}>
                     A community designed for students, innovators, and future tech leaders.
                 </p>

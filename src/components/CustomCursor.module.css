@@ -1,0 +1,49 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-primary-neon-green);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.trailer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-primary-neon-green);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, border-color 0.2s;
+  mix-blend-mode: difference;
+}
+
+/* Hover state classes will be applied via JS */
+.hovered .cursor {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.hovered .trailer {
+  width: 60px;
+  height: 60px;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (pointer: coarse) {
+  .cursor, .trailer {
+    display: none;
+  }
+}

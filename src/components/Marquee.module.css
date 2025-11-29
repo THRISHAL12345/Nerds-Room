@@ -1,0 +1,43 @@
+.marqueeContainer {
+    width: 100%;
+    background: var(--color-primary-neon-green);
+    color: #000;
+    overflow: hidden;
+    padding: 1rem 0;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transform: rotate(-2deg);
+    margin: 2rem 0;
+    z-index: 10;
+    position: relative;
+}
+
+.marqueeContent {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.text {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

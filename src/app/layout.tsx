@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   description: "A community designed for students, innovators, and future tech leaders.",
 };
 
+import CustomCursor from "@/components/CustomCursor";
+import NoiseOverlay from "@/components/NoiseOverlay";
+import GridBackground from "@/components/GridBackground";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,6 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${poppins.className} antialiased`}>
+        <CustomCursor />
+        <NoiseOverlay />
+        <GridBackground />
         {children}
       </body>
     </html>

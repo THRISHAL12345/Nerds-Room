@@ -10,12 +10,14 @@ import Testimonials from "@/components/Testimonials";
 import FounderLetter from "@/components/FounderLetter";
 import Socials from "@/components/Socials";
 import Footer from "@/components/Footer";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
+      <Marquee />
       <EventCountdown />
       <JoinCommunity />
       <Motive />
