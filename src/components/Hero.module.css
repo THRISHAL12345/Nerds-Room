@@ -160,7 +160,8 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding: 3rem 1rem;
+        padding: 8rem 1rem 3rem;
+        /* Increased top padding to clear Navbar */
         min-height: auto;
     }
 

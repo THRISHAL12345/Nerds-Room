@@ -67,6 +67,7 @@
 .card:hover .iconWrapper {
     color: #000;
     border-color: #000;
+    background: transparent;
 }
 
 .iconWrapper {

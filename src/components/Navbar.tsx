@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className={styles.logoContainer}>
                 <Link href="/">
                     <Image
-                        src="/assets/logo-text.jpg"
+                        src="/assets/logo-nerds-room.png"
                         alt="Nerds Room Logo"
                         width={150}
                         height={40}
