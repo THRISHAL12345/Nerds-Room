@@ -84,36 +84,38 @@
 
 @media (max-width: 968px) {
     .section {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
     }
 
     .container {
         flex-direction: column;
         text-align: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .illustration {
         width: 100%;
-        min-height: 250px;
+        min-height: 200px;
     }
 
     .circle1,
     .circle2 {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .card {
         transform: rotate(0deg);
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 
     .text {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 }

@@ -120,30 +120,42 @@
 
 @media (max-width: 768px) {
     .section {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
     }
 
     .headline {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .description {
-        font-size: 1rem;
-        margin-bottom: 3rem;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .card {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .iconWrapper {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .cardTitle {
+        font-size: 1.3rem;
     }
 
     .joinBtn {
         width: 100%;
-        padding: 1rem;
-        font-size: 1.2rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+        box-shadow: 4px 4px 0px #000;
     }
 }
