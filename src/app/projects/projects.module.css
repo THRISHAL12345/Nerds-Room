@@ -140,11 +140,23 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 6rem 1rem 3rem;
+    }
+
     .grid {
         grid-template-columns: 1fr;
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        transform: rotate(0deg) !important;
     }
 }

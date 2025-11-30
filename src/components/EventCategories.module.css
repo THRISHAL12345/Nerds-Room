@@ -125,3 +125,28 @@
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .partnerLogo {
+        margin: 0 1.5rem;
+        font-size: 1.5rem;
+    }
+}

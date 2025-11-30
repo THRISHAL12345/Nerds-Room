@@ -83,17 +83,37 @@
 }
 
 @media (max-width: 968px) {
+    .section {
+        padding: 4rem 1rem;
+    }
+
     .container {
         flex-direction: column;
         text-align: center;
+        gap: 3rem;
     }
 
     .illustration {
         width: 100%;
-        min-height: 300px;
+        min-height: 250px;
+    }
+
+    .circle1,
+    .circle2 {
+        width: 200px;
+        height: 200px;
     }
 
     .card {
         transform: rotate(0deg);
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1rem;
     }
 }

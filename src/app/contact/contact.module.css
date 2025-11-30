@@ -132,14 +132,29 @@
 @media (max-width: 968px) {
     .container {
         flex-direction: column;
+        padding: 6rem 1rem 3rem;
+        gap: 3rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 1rem;
     }
 
     .postIt {
         width: 100%;
         transform: rotate(0deg);
+        margin: 0 auto;
     }
 
     .formSide {
         transform: rotate(0deg);
+        padding: 1.5rem;
+        width: 100%;
     }
 }

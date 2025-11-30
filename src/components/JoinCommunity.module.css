@@ -117,3 +117,33 @@
     color: #fff;
     border-color: #fff;
 }
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .card {
+        padding: 2rem 1.5rem;
+    }
+
+    .joinBtn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
