@@ -33,14 +33,23 @@ const Navbar = () => {
         <nav className={clsx(styles.navbar, isScrolled && styles.scrolled)}>
             <div className={styles.logoContainer}>
                 <Link href="/">
-                    <Image
-                        src="/assets/logo-nerds-room.png"
-                        alt="Nerds Room Logo"
-                        width={150}
-                        height={40}
-                        className={styles.logoImage}
-                        priority
-                    />
+                    <div className={styles.textLogo}>
+                        <span className={styles.logoTextBlue}>nerds</span>
+                        <span className={styles.logoTextBlue}>r</span>
+                        <div className={styles.infinityContainer}>
+                            <svg viewBox="0 0 100 50" className={styles.infinitySvg}>
+                                <path
+                                    d="M25,25 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0 M75,25 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0"
+                                    fill="none"
+                                    stroke="var(--color-primary-neon-green)"
+                                    strokeWidth="12"
+                                />
+                                <circle cx="25" cy="25" r="6" fill="var(--color-primary-deep-blue)" />
+                                <circle cx="75" cy="25" r="6" fill="var(--color-primary-deep-blue)" />
+                            </svg>
+                        </div>
+                        <span className={styles.logoTextBlue}>m</span>
+                    </div>
                 </Link>
             </div>
 

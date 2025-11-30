@@ -31,163 +31,33 @@
     transform: rotate(-2deg) scale(1.05);
 }
 
-.logoImage {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
-}
-
-.navContent {
+.textLogo {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    flex-grow: 1;
-    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
-.navLinks {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    align-items: center;
-}
-
-.navLink {
-    color: var(--color-text-main);
-    font-weight: 700;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.2s ease;
-    position: relative;
-    padding: 0.5rem;
-}
-
-.navLink:hover {
-    color: var(--color-primary-neon-green);
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 4px;
-    transform: translateY(-2px);
-}
-
-.actions {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.icons {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.icon {
-    font-size: 1.2rem;
-    color: var(--color-text-muted);
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.icon:hover {
-    color: var(--color-primary-neon-green);
-    transform: scale(1.2) rotate(10deg);
-}
-
-.joinBtn {
-    background-color: var(--color-primary-neon-green);
+.logoTextBlue {
     color: var(--color-primary-deep-blue);
-    padding: 0.6rem 1.5rem;
-    border: 2px solid var(--color-text-main);
-    border-radius: 8px;
-    font-weight: 800;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    box-shadow: 4px 4px 0px var(--color-text-main);
-    transition: all 0.2s ease;
 }
 
-.joinBtn:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px var(--color-text-main);
-    background-color: #fff;
+.infinityContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    margin: 0 2px;
 }
 
-.joinBtn:active {
-    transform: translate(2px, 2px);
-    box-shadow: 0px 0px 0px var(--color-text-main);
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    z-index: 1002;
-}
-
-.bar {
-    width: 30px;
-    height: 4px;
-    background-color: var(--color-text-main);
-    border-radius: 0;
-    transition: all 0.3s ease;
-    border: 1px solid #000;
-}
-
-.barOpen:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 7px);
-}
-
-.barOpen:nth-child(2) {
-    opacity: 0;
-}
-
-.barOpen:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+.infinitySvg {
     width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    z-index: 1000;
-    transition: all 0.3s ease;
-    background: var(--color-bg-dark);
-    border-bottom: 2px solid transparent;
-}
-
-.scrolled {
-    border-bottom: 2px solid var(--color-primary-soft-blue);
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-.logoContainer {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-    z-index: 1002;
-}
-
-.logoContainer:hover {
-    transform: rotate(-2deg) scale(1.05);
-}
-
-.logoImage {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
+    height: 100%;
+    overflow: visible;
 }
 
 .navContent {
