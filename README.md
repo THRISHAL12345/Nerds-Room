@@ -2,7 +2,7 @@
 
 **Nerds Room** is a high-energy, **Neo-Brutalist** community platform designed for builders, hackers, and creators. It's a space to showcase projects, connect with like-minded individuals, and access curated resources.
 
-![Nerds Room Banner](/public/assets/logo-text-styled.png)
+![Nerds Room Banner](/public/assets/logo-text.jpg)
 
 ## 🎨 Design Philosophy
 
